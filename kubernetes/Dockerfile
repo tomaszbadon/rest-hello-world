@@ -1,5 +1,5 @@
 FROM openjdk:17
-ADD ./build/libs/rest-demo-0.0.1-SNAPSHOT.jar ~/rest-demo-0.0.1-SNAPSHOT.jar
+ADD ../build/libs/rest-demo-0.0.1-SNAPSHOT.jar ~/rest-demo-0.0.1-SNAPSHOT.jar
 EXPOSE 8080/tcp
 WORKDIR ~/
 ENTRYPOINT [ "java", "-jar", "rest-demo-0.0.1-SNAPSHOT.jar"]
